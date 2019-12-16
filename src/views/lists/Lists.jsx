@@ -1,4 +1,4 @@
-import styles from './HomePage.module.scss';
+import styles from './Lists.module.scss';
 
 import React from 'react';
 import { connect } from 'react-redux';
@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => ({
   isRequesting: selectRequesting(state, [ShowsAction.REQUEST_SHOW, ShowsAction.REQUEST_CAST]),
 });
 
-class HomePage extends React.Component {
+class Lists extends React.Component {
   render() {
     const { isRequesting } = this.props;
 
@@ -33,5 +33,5 @@ class HomePage extends React.Component {
   }
 }
 
-export { HomePage as Unconnected };
-export default connect(mapStateToProps)(HomePage);
+export { Lists as Unconnected };
+export default connect(mapStateToProps)(Lists);

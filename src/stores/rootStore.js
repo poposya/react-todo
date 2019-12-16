@@ -12,7 +12,7 @@ export default (initialState, history) => {
 
   const store = createStore(rootReducer(history), initialState, composeWithDevTools(applyMiddleware(...middleware)));
 
-  // store.subscribe(() => console.log(store.getState()));
+  store.subscribe(() => console.log(store.getState()));
 
   return store;
 };
