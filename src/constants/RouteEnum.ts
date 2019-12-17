@@ -1,5 +1,5 @@
 enum RouteEnum {
-  Lists = '/',
+  Home = '/',
   NewList = '/new-list',
 }
 
